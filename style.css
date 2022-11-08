@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: linear-gradient(#686a6c, #f1a23d);
+  width: 100vh;
+  height: 100vh;
+  padding-left: 37%;
+  padding-top: 7%; 
+}
+
+.grid {
+  height: 470px;
+  width: 350px ;
+  display: grid;
+  box-shadow: 8px 8px 5px rgb(19, 18, 18);
+}
+
+.tela {
+    background-color: rgb(36, 33, 33);
+    text-align: right;
+    font-size: 37px; 
+    color: white;
+    padding: 10px;
+  }
+  
+.botao {
+  background-color: rgb(14, 13, 13);
+  color: rgb(252, 252, 252);
+  font-size: 25px;
+  
+}
+.igual {
+  background-color: #f1a23d;
+  color: white;
+}
+.opera {
+  color: #f1a23d;
+}
+.tela {
+  grid-area: tela;
+}
+.um {
+  grid-area: um;
+}
+.dois {
+  grid-area: dois;
+}
+.tres {
+  grid-area: tres;
+}
+.quatro {
+  grid-area: quatro;
+}
+.cinco {
+  grid-area: cinco;
+}
+.seis {
+  grid-area: seis;
+}
+.sete {
+  grid-area: sete;
+}
+.oito {
+  grid-area: oito;
+}
+.nove {
+  grid-area: nove;
+}
+.zero {
+  grid-area: zeru;
+}
+.limpar {
+  grid-area: limpar;
+}
+.apagar {
+  grid-area: apagar;
+}
+.porcent {
+  grid-area: porcent;
+}
+.mais {
+  grid-area: mais;
+}
+.menos {
+  grid-area: menos;
+}
+.X {
+  grid-area: mult;
+}
+.virgula {
+  grid-area: virgula;
+}
+.igual {
+  grid-area: igual;
+}
+.div {
+  grid-area: div;
+}
+
+.grid {
+  grid-template-areas:
+    "tela tela tela tela "
+    "limpar apagar porcent div "
+    "sete oito nove mult"
+    "quatro cinco seis menos"
+    "um dois tres mais"
+    "zeru zeru virgula igual";
+}
