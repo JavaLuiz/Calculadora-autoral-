@@ -109,7 +109,6 @@ body {
 .div {
   grid-area: div;
 }
-
 .grid {
   grid-template-areas:
     "tela tela tela tela "
