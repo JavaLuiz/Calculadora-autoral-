@@ -8,15 +8,16 @@
 
 body {
   background: linear-gradient(#686a6c, #f1a23d);
-  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  padding-left: 37%;
-  padding-top: 7%; 
 }
 
+
 .grid {
-  height: 470px;
-  width: 350px ;
+  height: 570px;
+  width: 450px ;
   display: grid;
   box-shadow: 8px 8px 5px rgb(19, 18, 18);
 }
@@ -33,11 +34,17 @@ body {
   background-color: rgb(14, 13, 13);
   color: rgb(252, 252, 252);
   font-size: 25px;
-  
+  cursor: pointer;
+}
+.botao:hover{
+  background-color: rgb(43, 22, 16);
 }
 .igual {
   background-color: #f1a23d;
   color: white;
+  /* border-radius: 50%; */
+ 
+ 
 }
 .opera {
   color: #f1a23d;
@@ -81,8 +88,8 @@ body {
 .apagar {
   grid-area: apagar;
 }
-.porcent {
-  grid-area: porcent;
+.invert {
+  grid-area: invert;
 }
 .mais {
   grid-area: mais;
@@ -106,7 +113,7 @@ body {
 .grid {
   grid-template-areas:
     "tela tela tela tela "
-    "limpar apagar porcent div "
+    "limpar limpar invert div "
     "sete oito nove mult"
     "quatro cinco seis menos"
     "um dois tres mais"

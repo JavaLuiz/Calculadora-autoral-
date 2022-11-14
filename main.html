@@ -6,33 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Calculadora</title>
 </head>
 
 <body>
-
+    
 
     <div class="grid">
-        <div class="tela">5555</div>
-        <button class="botao limpar opera">AC</button>
-        <button class="botao apagar opera">E</button>
-        <button class="botao porcent opera">%</button>
-        <button class="botao div opera">÷</button>
-        <button class="botao sete num">7</button>
-        <button class="botao oito num">8</button>
-        <button class="botao nove num">9</button>
-        <button class="botao X opera">X</button>
-        <button class="botao quatro ">4</button>
-        <button class="botao cinco num">5</button>
-        <button class="botao seis num">6</button>
-        <button class="botao menos opera">-</button>
-        <button class="botao um num">1</button>
-        <button class="botao dois num">2</button>
-        <button class="botao tres num">3</button>
-        <button class="botao mais opera">+</button>
-        <button class="botao zero num">0</button>
-        <button class="botao virgula num">,</button>
-        <button class="botao igual">=</button>
+        <input id= "valor" class="tela">
+        <button onclick="limpar()"  class="botao limpar opera">AC</button>
+        <button onclick="inverterValores()" class="botao invert opera">-+</button>
+        <button onclick="inserirValores(' / ')"class="botao div opera">÷</button>
+        <button onclick="inserirValores('7')" class="botao sete num">7</button>
+        <button onclick="inserirValores('8')"class="botao oito num">8</button>
+        <button onclick="inserirValores('9')"class="botao nove num">9</button>
+        <button onclick="inserirValores(' * ')"class="botao X opera">X</button>
+        <button onclick="inserirValores('4')"class="botao quatro ">4</button>
+        <button onclick="inserirValores('5')"class="botao cinco num">5</button>
+        <button onclick="inserirValores('6')"class="botao seis num">6</button>
+        <button onclick="inserirValores(' - ')"class="botao menos opera">-</button>
+        <button onclick="inserirValores('1')"class="botao um num">1</button>
+        <button onclick="inserirValores('2')"class="botao dois num">2</button>
+        <button onclick="inserirValores('3')"class="botao tres num">3</button>
+        <button onclick="inserirValores(' + ')"class="botao mais opera">+</button>
+        <button onclick="inserirValores('0')"class="botao zero num">0</button>
+        <button onclick="inserirValores(' . ')"class="botao virgula num">,</button>
+        <button onclick="calcular()"class="botao igual">=</button>
     </div>
 
 
